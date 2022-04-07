@@ -1,6 +1,4 @@
-/**
- * Базовые стили для всего сайта
- */
+
 body {
 	position: relative;
 	font-family: 'Noto Sans', sans-serif;
@@ -9,13 +7,11 @@ body {
 	color: #000;
 	min-width: 320px;
 	overflow-x: hidden;
-	height: auto;
+	height: 700vh;
 }
 
 
-/**
- * Другие стили
- */
+
 .navbar {
   width: 100%;
   height: 70px;
@@ -83,10 +79,107 @@ body {
   .navbar-brand:hover{
   	color: coral;
   }
+  .product{
+  	margin-bottom: 30px
+  }
   	
+ .imge img {
+ 	height: 300px;
+ 	width: 100%;
+ 	object-fit: cover;
+ 	border-radius: 7px;
+ }
+ .imge  {
+ 	margin-bottom: 10px;
+ }
+ .info h3{
+ 	font-size: 21px;
+ 	margin-bottom: 0;
+ }
+ .info-price{
+ 	display: flex;
+ 	flex-flow: row nowrap;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	
+ }
+
+ .buy{
+ 	margin-left: 30px;
+  	padding: 10px 30px;
+  	background-color: coral;
+  	border-radius: 100px;
+  	color: #fff; 
+  	text-decoration: none;
+  	box-shadow: 0 4px 6px rgba(255, 127, 80, .2);
+  	transition: all .1s ease-out;
+  	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	}
+ .price{
+ 	font-weight: 700;
+ 	font-size: 18px;
+ }
+
+.header{
+	position: relative;
+	min-height: 700px
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+.header-content{
+	text-align: center;
+	position: relative;
+    z-index: 2;
+    color: #fff;
+}
+.header .row{
+	min-height: 700px;
+	display: flex;
+	align-items: center;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, .6);
+}
+.header-content h1 {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 10px;
+
+}
+.header-content h4 {
+	font-size: 21px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	opacity: 0.7;
+	margin-bottom: 35px;
 
 
+}
+ .btn-main{
+	display: inline-block;
+	padding: 10px 35px;
+	font-size: 18px;
+	border: none;
+	background-color: #fff;
+	text-transform: uppercase;
+	border-radius: : 5px;
+	font-weight: 700;
+	box-shadow: 0 5px 10px rgba(0,0,0, .4)
+	transition: all .09s ease-out;
+	border-radius: 100px;
+}
 
-
-
-
+ .btn-main:hover{
+	box-shadow: 0 5px 10px rgba(0,0,0, .4)
+	transform: scale(1.05);
+}
